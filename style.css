@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header, .footer, #top {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+.signupbox h1{
+    font-size: 48px;
+    font-weight:bolder;
+}
+
+.header ul, .signupbox p {
+    list-style-type: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+button, .cta {
+    background-color:#3882F6;
+    color: #F9FAF8;
+}
+
+h2.info {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.quote {
+    background-color: #E5E7EB;
+}
+
+.quote p {
+    font-size: 36px;
+    font-weight:lighter;
+    font-style:italic;
+    color: #1F2937;
+}
