@@ -9,9 +9,36 @@
     background-color: #1F2937;
     color: #F9FAF8;
 }
+
+.header {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+.header ul {
+    display: flex;
+    gap: 20px;
+}
+
 .signupbox h1{ /*styles the 'this website is awesome' text*/
     font-size: 48px;
-    font-weight:bolder;
+    font-weight:1000;
+
+}
+
+.signupbox {
+    width: 500px;
+    padding-right: 40px;
+}
+
+.img {
+    width:500px;
+    background-color: gray;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header ul, .signupbox p { /*styles links at top and font in paragraph above signup button*/
@@ -24,35 +51,49 @@
     font-size: 24px;
 }
 
-/* end header and top section*/
+button {
+    border:solid 2px #3882F6;
+    border-radius:.5em;
+    margin-top: 10px;
+}
 
+/* end header and top section*/
 
 button, .cta {  /* Stylings that the Sign Up button and Call to Action sections share*/
     background-color:#3882F6;
     color: #F9FAF8;
+    padding-block:8px;
+    padding-inline: 30px;
 }
 
 /* start info section */
 
 h2.info {  /* styling for the 'some random information' header */
     font-size: 36px;
-    font-weight: bolder;
+    font-weight: 1000;
     color: #1F2937;
+    padding: 45px;
 }
+
 .info {
     text-align: center;
+    flex: 0;
 }
+
 .icon {
     height:150px;
     width:150px;
     border:solid 3px #3882F6;
     border-radius: .5em;
 }
+
 /* end info section
 start quote section */
 
 .quote {
     background-color: #E5E7EB;
+    padding: 120px;
+    padding-inline: 300px;
 }
 
 .quote p {
@@ -62,21 +103,51 @@ start quote section */
     color: #1F2937;
 }
 
+.quote h3 {
+    text-align: end;
+}
 
-/**  Beginnn messing with the boxes below via flex etc., styling above **/
+/* end quotes section
+begin call to action section */
+
+.cta {
+    display: flex;
+    border-radius: .5em;
+    padding-block:35px;
+    padding-inline: 100px;
+    align-items: center;
+}
+
+.cta button {
+    border:#F9FAF8 2px solid;
+    margin-left: 150px;
+}
+
+
+/** end call to action section
+Section properties below **/
 
 
 .section{
     display: flex;
+    justify-content: center;
 }
 
-.header {
-    display: flex;
-    padding: 20px;
-    justify-content: space-around;
+.section#top {
+
+    padding-block: 140px;
 }
 
-.header ul {
-    display: flex;
-    gap: 20px;
+.section:nth-child(4) {
+    gap:40px;
+    margin-bottom: 100px;
+}
+
+.section:nth-child(6) {
+    margin-block: 100px;
+}
+
+.footer{
+    text-align: center;
+    padding: 40px;
 }
